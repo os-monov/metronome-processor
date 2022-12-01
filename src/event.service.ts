@@ -53,8 +53,7 @@ export class EventService {
       startDate.setHours(startDate.getHours() + 1);
       startBucket = this.getBucket(startDate);
     }
-    buckets.push(endBucket);
-
+    
     const customerData = this.database.get(customerId);
     
     buckets.forEach((bucket) => {
